@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.loginMain{
+    height: 100vh;
+    background: #313231;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f2f2f2;
+}
+.loginFormSection{
+    margin: 20px 0;
+
+}
+.loginFormSection form{ 
+    display: flex;
+    flex-direction: column;
+}
+.loginFormSection form input{ 
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #f2f2f2;
+    padding: 8px 20px;
+    background: none;
+    color: #f2f2f2;
+}
+.loginFormSection form button{ 
+    width: 150px;
+    background: none;
+    border: 1px solid #00ff3c;
+    border-radius: 5px;
+    padding: 12px;
+    color: #00ff3c;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
