@@ -5,7 +5,7 @@ const Question = require('../models/Questions.model');
 // POST endpoint para crear o actualizar una pregunta (ya existente)
 router.post('/', async (req, res) => {
     try {
-        const { ruleId, q1, q2, q3, q4, status } = req.body;
+        const { ruleTitle, ruleId, q1, q2, q3, q4, status } = req.body;
         const today = new Date();
         today.setHours(0, 0, 0, 0);
 
@@ -23,6 +23,7 @@ router.post('/', async (req, res) => {
         } else {
             // Creación de un nuevo registro
             question = new Question({
+                ruleTitle,
                 ruleId,
                 q1,
                 q2,
